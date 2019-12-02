@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rainforest</title>
+        <link rel="icon" href="./rainforestLogo.png" />
+        <link href='./stylesheet.css' type = 'text/css' rel = 'stylesheet'>
+        <style>
+            @font-face {
+                font-family: "Futura PT";
+                src: local("./FuturaPTBook.otf");
+            }
+        </style>
+    </head>
+    <body>
+        <div class="logo-container">
+            <div id="logo">
+                <img src="./rainforestLogo.png" height="100px" width="110px">
+                <h1>Rainforest</h1>
+            </div>
+        </div>
+        <div class="heading-container">
+            <h1>The world's first eco-friendly marketplace</h1>
+            <h2>Coming soon...</h2>
+        </div>
+        <div id="notifybutton">
+            <span>Get notified when we launch</span>
+        </div>
+        <div class="form-container">
+                <span id="formexit">X</span>
+                <h2 id="formtext">Tap in your email and we'll let you know when we launch:</h2>
+                <form id="forminputs" action="/submitform" method="post">
+                    <input id="emailinput" name="email_address" type="email" placeholder="Email address">
+                    <input type="submit" id="submitbutton" value="submit">
+                </form>
+        </div>
+    </body>
+
+<script src="./formlogic.js"></script>
+<script url="./sheetslink.js"></script>
+</html>
