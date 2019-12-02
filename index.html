@@ -28,13 +28,23 @@
         <div class="form-container">
                 <span id="formexit">X</span>
                 <h2 id="formtext">Tap in your email and we'll let you know when we launch:</h2>
-                <form id="forminputs" action="/submitform" method="post">
-                    <input id="emailinput" name="email_address" type="email" placeholder="Email address">
+                <form id="forminputs">
+                    <input id="emailinput" name="email" type="email" placeholder="Email address">
                     <input type="submit" id="submitbutton" value="submit">
                 </form>
         </div>
     </body>
 
 <script src="./formlogic.js"></script>
-<script url="./sheetslink.js"></script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbx0hpkum-TMzRuE9Dgee0rTDZc_3EJPeaTX13wrflSElixil54/exec';
+    const form = document.forms['forminputs'];
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
 </html>

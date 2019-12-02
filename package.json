@@ -1,0 +1,23 @@
+{
+  "name": "rainforest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "formlogic.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Waterways12/Rainforest.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Waterways12/Rainforest/issues"
+  },
+  "homepage": "https://github.com/Waterways12/Rainforest#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "form-serializer": "^2.5.0"
+  }
+}
