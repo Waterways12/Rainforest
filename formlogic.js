@@ -16,7 +16,7 @@ getNotifiedButton.addEventListener('click', () => {
 
 formExit.addEventListener('click', () => {
     getNotifiedButton.style.display = 'flex';
-    formInputs.style.display = 'none';
+    formContainer.style.display = 'none';
 });
 
 formSubmit.addEventListener('click', () => {
