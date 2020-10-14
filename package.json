@@ -18,6 +18,7 @@
   "homepage": "https://github.com/Waterways12/Rainforest#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "form-serializer": "^2.5.0"
+    "form-serializer": "^2.5.0",
+    "live-server": "^1.2.1"
   }
 }

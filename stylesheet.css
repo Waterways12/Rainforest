@@ -175,3 +175,32 @@ h2 {
         width: 95%;
     }
 }
+
+#privacy-policy {
+    width: 80vw;
+    max-width: 800px;
+    background-color: white;
+    border-radius: 15px;
+    color: rgb(20,20,20);
+    padding: 5px 20px;
+    display: flex;
+}
+
+#privacy-policy h2 {
+    max-width: 20%;
+}
+#privacy-policy p {
+    width: 80%;
+    max-width: 80%;
+}
+
+@media (max-width: 600px) {
+    #privacy-policy {
+        flex-direction: column;
+    }
+
+    #privacy-policy .h2 {
+        max-width: 70%;
+    }
+}
+
